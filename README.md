@@ -8,16 +8,16 @@
 install.packages("devtools")
 library("devtools")
 install_github('mendelprob','statgenetics')
+library("mendelprob")
 ```
 
 ## Probability Calculation
 
-`mendel_prob` function can be used to determine the probability of detecting a minimum number of families or unrelated cases with pathogenic variants in the same gene or the probability of detecting genes with pathogenic variants in different data types, e.g., identifying a variant in a minimum of one family which can establish linkage and at least two additional families regardless of size.
+`mendel_prob` function can be used to determine the probability of detecting a minimum number of families or unrelated cases with pathogenic variants in the same gene or the probability of detecting genes with pathogenic variants in different data types, for example, identifying a variant in a minimum of one family which can establish linkage and at least two additional families regardless of size.
 
 Example:
 
 ```R
-library("mendelprob")
 mendel_prob(num_family = 125, 
             num_case = 500, 
             gene_freq = 0.005,
@@ -35,12 +35,11 @@ Where
 
 ## Sample Size Calculation
 
-`mendel_sample_size` can be used to determine the number of families/cases which need to be screened to detect a minimum number of observations of potentially pathogenic variants within the same gene. 
+`mendel_sample_size` can be used to determine the number of samples (families + cases) which need to be screened to detect a minimum number of observations of potentially pathogenic variants within the same gene. 
 
 Example:
 
 ```R
-library("mendelprob")
 mendel_sample_size(prob = 0.8, 
                    family_prop = 0.2,
                    gene_freq = 0.005,
@@ -61,7 +60,7 @@ Where
 + Please refer `?mendel_prob` or `?mendel_sample_size` in R console for detailed function description. 
 + If you found the tool is usful, please cite XXX . 
 + For any questions, comments, suggestions, bug reports etc, feel free to contact
-  + Suzanne Leal, steal@bcm.edu
+  + Suzanne Leal, sleal@bcm.edu
   + Zongxiao He, hezongxiao@gmail.com
 
 
