@@ -1,0 +1,13 @@
+Package: mendelprob
+Title: Power Calculation for Mendelian Study
+Version: 1.0
+Authors@R: as.person(c(
+    "Zongxiao He <hezongxiao@gmail.com> [aut, cre]", 
+    "Suzanne Leal <sleal@bcm.edu> [aut]"
+  ))
+Description: What the package does (one paragraph).
+Depends: R (>= 3.0.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
