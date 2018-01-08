@@ -12,14 +12,14 @@ mendel_sample_size(prob, family_prop, gene_freq, min_num_total_mutation,
 
 \item{family_prop}{proportion of family}
 
-\item{gene_freq}{proportion of affected individuals explained by one gene}
+\item{gene_freq}{proportion of affected individuals explained by one gene, -1 if the proportion is not specified}
 
 \item{min_num_total_mutation}{minimum number of families and cases with pathogenic variant(s) in the same gene}
 
 \item{min_num_family_mutation}{minimum number of families with pathogenic variant(s) in the same gene}
 }
 \value{
-(num_family, num_case) needed to reach desired probability
+return number of samples (num_family + num_case) needed to reach desired probability
 }
 \description{
 Determine the number of families/cases which need to be screened to detect a minimum number of observations of potentially pathogenic variants within the same gene.
