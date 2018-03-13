@@ -37,7 +37,7 @@ mendel_prob(num_probands=125,
 Where
 
 + `num_probands` is the number of probands
-+ `num_probands_type_2` is the number of unrelated cases in the total probands
++ `num_probands_type_2` is the number of unrelated cases
 + `gene_freq` is the proportion of affected individuals explained by one gene
 + `min_num_variants` is the minimum number of probands with pathogenic variant(s) in the same gene 
 + `min_num_probands_variants` is the minimum number of proband being a member of a family with pathogenic variant(s) in the same gene (note: `min_num_probands_variants`  cannot be bigger than  `min_num_variants`)
