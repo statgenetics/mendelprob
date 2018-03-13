@@ -4,8 +4,8 @@
 \alias{mendel_prob_with_family_ratio}
 \title{mendel_prob_with_family_ratio}
 \usage{
-mendel_prob_with_family_ratio(num_family_plus_case, family_prop, gene_freq,
-  min_num_total_mutation, min_num_family_mutation)
+mendel_prob_with_family_ratio(num_probands_total, proband_prop, gene_freq,
+  min_num_variants, min_num_probands_variants)
 }
 \description{
 internal use only.

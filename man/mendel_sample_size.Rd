@@ -4,19 +4,19 @@
 \alias{mendel_sample_size}
 \title{mendel_sample_size}
 \usage{
-mendel_sample_size(prob, family_prop, gene_freq, min_num_total_mutation,
-  min_num_family_mutation)
+mendel_sample_size(prob = 0.8, proband_prop = NULL, gene_freq = 0.005,
+  min_num_variants = 2, min_num_probands_variants = 0)
 }
 \arguments{
 \item{prob}{probability}
 
-\item{family_prop}{proportion of family}
+\item{proband_prop}{proportion of family}
 
 \item{gene_freq}{proportion of affected individuals explained by one gene, -1 if the proportion is not specified}
 
-\item{min_num_total_mutation}{minimum number of families and cases with pathogenic variant(s) in the same gene}
+\item{min_num_variants}{minimum number of families and cases with pathogenic variant(s) in the same gene}
 
-\item{min_num_family_mutation}{minimum number of families with pathogenic variant(s) in the same gene}
+\item{min_num_probands_variants}{minimum number of families with pathogenic variant(s) in the same gene}
 }
 \value{
 return number of samples (num_family + num_case) needed to reach desired probability

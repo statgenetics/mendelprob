@@ -6,6 +6,11 @@
 
 ```R
 install.packages("devtools")
+```
+
+In case you are asked to select a CRAN mirror, choose a mirror near your current location.  
+
+```R
 library("devtools")
 install_github('mendelprob','statgenetics')
 library("mendelprob")
@@ -15,51 +20,60 @@ library("mendelprob")
 
 `mendel_prob` function can be used to determine the probability of detecting a minimum number of families or unrelated cases with pathogenic variants in the same gene or the probability of detecting genes with pathogenic variants in different data types, for example, identifying a variant in a minimum of one family which can establish linkage and at least two additional families regardless of size.
 
-Example:
+Examples:
 
 ```R
-mendel_prob(num_family = 125, 
-            num_case = 500, 
+mendel_prob(num_probands=625, 
+            gene_freq=0.005,
+            min_num_variants=2)
+
+mendel_prob(num_probands = 125, 
+            num_probands_type_2 = 500, 
             gene_freq = 0.005,
-            min_num_total_mutation = 2, 
-            min_num_family_mutation = 1)
+            min_num_variants = 2, 
+            min_num_probands_variants = 1)
 ```
 
 Where
 
-+ `num_family` is the number of families
-+ `num_case` is the number of unrelated cases
++ `num_probands` is the number of families
++ `num_probands_type_2` is the number of unrelated cases
 + `gene_freq` is the proportion of affected individuals explained by one gene
-+ `min_num_total_mutation` is the minimum number of families and cases with pathogenic variant(s) in the same gene 
-+ `min_num_family_mutation` is the minimum number of families with pathogenic variant(s) in the same gene 
++ `min_num_variants` is the minimum number of families and cases with pathogenic variant(s) in the same gene 
++ `min_num_probands_variants` is the minimum number of families with pathogenic variant(s) in the same gene (note: `min_num_probands_variants`  cannot be bigger than  `min_num_variants`)
 
 ## Sample Size Calculation
 
 `mendel_sample_size` can be used to determine the number of samples (families + cases) which need to be screened to detect a minimum number of observations of potentially pathogenic variants within the same gene. 
 
-Example:
+Examples:
 
 ```R
 mendel_sample_size(prob = 0.8, 
-                   family_prop = 0.2,
+                   gene_freq = 0.1,
+                   min_num_variants = 2)
+
+mendel_sample_size(prob = 0.8, 
+                   proband_prop = 0.5,
                    gene_freq = 0.005,
-                   min_num_total_mutation = 2, 
-                   min_num_family_mutation = 1)
+                   min_num_variants = 3, 
+                   min_num_probands_variants = 1) 
 ```
 
 Where
 
 - `prob` is the probability
-- `family_prop` is the proportion of family
+- `proband_prop` is the proportion of family
 - `gene_freq` is the proportion of affected individuals explained by one gene
-- `min_num_total_mutation` is the minimum number of families and cases with pathogenic variant(s) in the same gene 
-- `min_num_family_mutation` is the minimum number of families with pathogenic variant(s) in the same gene 
+- `min_num_variants` is the minimum number of families and cases with pathogenic variant(s) in the same gene 
+- `min_num_probands_variants` is the minimum number of families with pathogenic variant(s) in the same gene (note: `min_num_probands_variants`  cannot be bigger than  `min_num_variants`)
 
 ## Reference & Contact
 
 + Please refer `?mendel_prob` or `?mendel_sample_size` in R console for detailed function description. 
++ For comments and bug reports, feel free to [create a issue](https://github.com/statgenetics/mendelprob/issues) on Github.
 + If you found the tool is usful, please cite XXX . 
-+ For any questions, comments, suggestions, bug reports etc, feel free to contact
++ For any questions and suggestions, feel free to contact
   + Suzanne Leal, sleal@bcm.edu
   + Zongxiao He, hezongxiao@gmail.com
 
