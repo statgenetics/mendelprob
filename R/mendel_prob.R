@@ -2,11 +2,11 @@
 #'
 #' Determine the probability of detecting a minimum number of families or unrelated cases with pathogenic variants in the same gene.
 #'
-#' @param num_probands number of families
+#' @param num_probands number of probands
 #' @param num_probands_type_2 number of unrelated cases
 #' @param gene_freq proportion of affected individuals explained by one gene
-#' @param min_num_variants minimum number of families and cases with pathogenic variant(s) in the same gene
-#' @param min_num_probands_variants minimum number of families with pathogenic variant(s) in the same gene
+#' @param min_num_variants minimum number of probands with pathogenic variant(s) in the same gene
+#' @param min_num_probands_variants minimum number of proband being a member of a family with pathogenic variant(s) in the same gene (cannot be bigger than min_num_variants)
 #' @return probability
 #' @export
 #' @examples
@@ -82,10 +82,10 @@ mendel_prob_with_family_ratio <- function(num_probands_total, proband_prop, gene
 #' Determine the number of families/cases which need to be screened to detect a minimum number of observations of potentially pathogenic variants within the same gene.
 #'
 #' @param prob probability
-#' @param proband_prop proportion of family
-#' @param gene_freq proportion of affected individuals explained by one gene, -1 if the proportion is not specified
-#' @param min_num_variants minimum number of families and cases with pathogenic variant(s) in the same gene
-#' @param min_num_probands_variants minimum number of families with pathogenic variant(s) in the same gene
+#' @param proband_prop proportion of proband being a member of a family, NULL if the proportion is not specified
+#' @param gene_freq proportion of affected individuals explained by one gene
+#' @param min_num_variants minimum number of probands with pathogenic variant(s) in the same gene
+#' @param min_num_probands_variants minimum number of proband being a member of a family with pathogenic variant(s) in the same gene (cannot be bigger than min_num_variants)
 #' @return return number of samples (num_family + num_case) needed to reach desired probability
 #' @export
 #' @examples

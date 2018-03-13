@@ -10,13 +10,13 @@ mendel_sample_size(prob = 0.8, proband_prop = NULL, gene_freq = 0.005,
 \arguments{
 \item{prob}{probability}
 
-\item{proband_prop}{proportion of family}
+\item{proband_prop}{proportion of proband being a member of a family, NULL if the proportion is not specified}
 
-\item{gene_freq}{proportion of affected individuals explained by one gene, -1 if the proportion is not specified}
+\item{gene_freq}{proportion of affected individuals explained by one gene}
 
-\item{min_num_variants}{minimum number of families and cases with pathogenic variant(s) in the same gene}
+\item{min_num_variants}{minimum number of probands with pathogenic variant(s) in the same gene}
 
-\item{min_num_probands_variants}{minimum number of families with pathogenic variant(s) in the same gene}
+\item{min_num_probands_variants}{minimum number of proband being a member of a family with pathogenic variant(s) in the same gene (cannot be bigger than min_num_variants)}
 }
 \value{
 return number of samples (num_family + num_case) needed to reach desired probability

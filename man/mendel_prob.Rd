@@ -8,15 +8,15 @@ mendel_prob(num_probands = 0, num_probands_type_2 = 0, gene_freq = 0.005,
   min_num_variants = 2, min_num_probands_variants = 0)
 }
 \arguments{
-\item{num_probands}{number of families}
+\item{num_probands}{number of probands}
 
 \item{num_probands_type_2}{number of unrelated cases}
 
 \item{gene_freq}{proportion of affected individuals explained by one gene}
 
-\item{min_num_variants}{minimum number of families and cases with pathogenic variant(s) in the same gene}
+\item{min_num_variants}{minimum number of probands with pathogenic variant(s) in the same gene}
 
-\item{min_num_probands_variants}{minimum number of families with pathogenic variant(s) in the same gene}
+\item{min_num_probands_variants}{minimum number of proband being a member of a family with pathogenic variant(s) in the same gene (cannot be bigger than min_num_variants)}
 }
 \value{
 probability
