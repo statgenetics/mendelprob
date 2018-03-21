@@ -41,25 +41,15 @@ mendel_prob(num_probands=125,
 Where
 
 - `num_probands`
-
-- - is the total number of probands or if probands are being drawn for two types of data, e.g. families and unrelated cases, this is the number of probands of type I 
-
+  - is the total number of probands or if probands are being drawn for two types of data, e.g. families and unrelated cases, this is the number of probands of type I 
 - `num_probands_type_2`
-
-- - the number of probands of type 2
-
+  - the number of probands of type 2
 - `gene_freq` 
-
-- - the percent of disease explained by a gene
-
+  - the percent of disease explained by a gene
 - `min_num_variants` 
-
-- - the minimum number of probands with potentially pathogenic variants in the same gene which need to be observed in the total sample. 
-
+  - the minimum number of probands with potentially pathogenic variants in the same gene which need to be observed in the total sample. 
 - `min_num_probands_variants` 
-
-- - the minimum number of probands of the first type (in this example 125) which are required to be observed with potentially pathogenic variants in the same gene 
-
+  - the minimum number of probands of the first type (in this example 125) which are required to be observed with potentially pathogenic variants in the same gene 
 - note:  `min_num_probands_variants` cannot be greater than `min_num_variants`
 
 ## Sample Size Calculations
@@ -83,25 +73,15 @@ mendel_sample_size(prob=0.8,
 Where
 
 - `prob`
-
-- - the probability of detecting the desired minimum number of potentially pathogenic variants
-
+  - the probability of detecting the desired minimum number of potentially pathogenic variants
 - `proband_prop` 
-
-- - the proportion of probands of type I
-
+  - the proportion of probands of type I
 - `gene_freq` 
-
-- - the percent of disease explained by a gene
-
+  - the percent of disease explained by a gene
 - `min_num_variants` 
-
-- - the minimum number of probands with potentially pathogenic variants in the same gene which need to be observed for the entire sample. 
-
+  - the minimum number of probands with potentially pathogenic variants in the same gene which need to be observed for the entire sample. 
 - `min_num_probands_variants` 
-
-- - the minimum number of potentially pathogenic variants which need to be observed in probands of type I (in this example 0.30). 
-
+  - the minimum number of potentially pathogenic variants which need to be observed in probands of type I (in this example 0.30). 
 - note: `min_num_probands_variants` cannot be greater than `min_num_variants`
 
 ## Reference & Contact **Information**
