@@ -90,7 +90,7 @@ Where
 + For comments and bug reports, feel free to [create an issue](https://github.com/statgenetics/mendelprob/issues) on Github.
 + If you found the tool is useful, please cite XXX . 
 + For any questions and suggestions, feel free to contact
-  + Suzanne Leal, suzannemleal@gmail.com\
+  + Suzanne Leal, suzannemleal@gmail.com
   + Zongxiao He, hezongxiao@gmail.com
 
 
