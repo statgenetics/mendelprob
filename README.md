@@ -81,7 +81,7 @@ Where
 - `min_num_variants` 
   - the minimum number of probands with potentially pathogenic variants in the same gene which need to be observed for the entire sample. 
 - `min_num_probands_variants` 
-  - the minimum number of potentially pathogenic variants which need to be observed in probands of type I (in this example 0.30). 
+  - the minimum number of potentially pathogenic variants which need to be observed in probands of type I (in this example 1). 
 - note: `min_num_probands_variants` cannot be greater than `min_num_variants`
 
 ## Reference & Contact **Information**
