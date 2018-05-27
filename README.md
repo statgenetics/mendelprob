@@ -22,7 +22,7 @@ library("mendelprob")
 
 ## Probability Calculations
 
-The `mendel_prob` function can be used to determine the probability of detecting a minimum number of probands with potentially pathogenic variants in the same gene. The probands can be either an affected family member or a case. Even if sequence data is generated on more than one family member to perform filtering, when calculating probabilities or number of subjects to be sequenced, each family is counted only once and neither size nor structure of the family will impact the results. 
+The `mendel_prob` function can be used to determine the probability of detecting a minimum number of probands with potentially pathogenic variants in the same gene. The proband can be either an affected family member or a case. Even if sequence data is generated on more than one family member to perform filtering, when calculating probabilities or number of subjects to be sequenced, each family is counted only once and neither size nor structure of the family will impact the results. 
 
 
 
