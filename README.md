@@ -14,7 +14,7 @@ If you are asked to select a CRAN mirror, choose a mirror site near your current
 
 ```R
 library("devtools")
-install_github('mendelprob','statgenetics')
+install_github('statgenetics/mendelprob')
 library("mendelprob")
 ```
 
