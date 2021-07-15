@@ -89,7 +89,10 @@ Where
 
 + Please refer to `?mendel_prob` or `?mendel_sample_size` in R console for detailed function descriptions. 
 + For comments and bug reports, feel free to [create an issue](https://github.com/statgenetics/mendelprob/issues) on Github.
-+ If you found the tool is useful, please cite XXX . 
++ If you found the tool is useful, please cite:
+
+>He Z, Wang L, DeWan AT, Leal SM. MendelProb: probability and sample size calculations for Mendelian studies of exome and whole genome sequence data. Bioinformatics. 2019 Feb 1;35(3):529-531. doi: 10.1093/bioinformatics/bty542. PMID: 30032240; PMCID: PMC6397596.
+
 + For any questions and suggestions, feel free to contact
   + Suzanne Leal, suzannemleal@gmail.com
   + Zongxiao He, hezongxiao@gmail.com
